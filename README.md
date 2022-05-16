@@ -23,6 +23,10 @@ To generate extracted features needed for our Ensemble model:
 ```
 python SimilarityGRU.py -te dataset/test.csv -l model_folder -p destination_folder
 ```
+To train and generate extracted features needed for the Ensemble model on concatGRU (best set of hyperparameters is already coded):
+```
+python concatGRU.py -tr dataset/training.csv -t dataset/test.csv -wv glove/glove.6B.200d.txt
+```
 To run our Ensemble model, you need to firstly change the dir_name in the code to your destination folder.
 ```
 python Ensemble_SED.py
