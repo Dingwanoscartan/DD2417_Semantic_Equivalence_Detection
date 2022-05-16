@@ -15,17 +15,23 @@ To train the simGRU model using the best set of hyperparameters that we find:
 set CUBLAS_WORKSPACE_CONFIG=:4096:8
 python SimilarityGRU.py -tr dataset/training.csv -te dataset/test.csv -hs 150 -bs 50 -e 15 -thf 30 -lr 0.001 -ef glove/glove.6B.200d.txt -s -st 1
 ```
-To load the saved model:
+To train the concatGRU model with the best set of parameters coded:
 ```
-python SimilarityGRU.py -te dataset/test.csv -l nodel_folder
+python concatGRU.py -tr dataset/training.csv -t dataset/test.csv -wv glove/glove.6B.200d.txt
+```
+To load the saved models:
+```
+python SimilarityGRU.py -te dataset/test.csv -l model_folder
+```
+```
+python concatGRU.py -t dataset/test.csv -l model_folder
 ```
 To generate extracted features needed for our Ensemble model:
 ```
 python SimilarityGRU.py -te dataset/test.csv -l model_folder -p destination_folder
 ```
-To train and generate extracted features needed for the Ensemble model on concatGRU (best set of hyperparameters is already coded):
 ```
-python concatGRU.py -tr dataset/training.csv -t dataset/test.csv -wv glove/glove.6B.200d.txt
+python concatGRU.py -t dataset/test.csv -l model_folder -p destination_folder
 ```
 To run our Ensemble model, you need to firstly change the dir_name in the code to your destination folder.
 ```

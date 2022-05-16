@@ -3,9 +3,9 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, confusion_matrix
 
 
-dir_name = 'Ensemble data'
+dir_name = 'representations'
 # data from concatGRU
-train_concatGRU = pd.read_csv(dir_name + '/concatGRU_train.csv')
+train_concatGRU = pd.read_csv(dir_name + '/concatGRU_training.csv')
 test_concatGRU = pd.read_csv(dir_name + '/concatGRU_test.csv')
 # data from SimGRU
 train_simGRU = pd.read_csv(dir_name + '/SimGRU_train.csv')
@@ -23,3 +23,42 @@ model.fit(train_x, train_y)
 pred_y = model.predict(test_x)
 print('Accuracy: ' + str(accuracy_score(test_y, pred_y)))
 print(confusion_matrix(test_y, pred_y))
+while True:
+    print("concatGRU_1: ")
+    text = input("> ")
+    if text == 'q':
+        break
+    if text == "":
+        continue
+    try:
+        c1 = float(text)
+    except KeyError:
+        print("Erroneous input string")
+        continue
+    print("concatGRU_2: ")
+    text = input("> ")
+    if text == 'q':
+        break
+    if text == "":
+        continue
+    try:
+        c2 = float(text)
+    except KeyError:
+        print("Erroneous input string")
+        continue
+    print("SimGRU: ")
+    text = input("> ")
+    if text == 'q':
+        break
+    if text == "":
+        continue
+    try:
+        s = float(text)
+    except KeyError:
+        print("Erroneous input string")
+        continue
+
+    if model.predict([[c1, c2, s]])[0] == 1:
+        print("Is duplicate")
+    else:
+        print("Is not duplicate")

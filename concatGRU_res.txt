@@ -56,7 +56,7 @@ Accuracy: 0.683
 ----------------------------------------------------------
 nltk tokenization, padding after concatenation, separation mark: padding, no end mark
 
-batch_size=256, epochs=10, eta=0.002, glove200, hidden100
+batch_size=256, epochs=10, eta=0.002, glove200, hidden200
 +-------------------+------------------------+---------------------+
 |                   | Predicted no duplicate | Predicted duplicate |
 +-------------------+------------------------+---------------------+
@@ -65,7 +65,7 @@ batch_size=256, epochs=10, eta=0.002, glove200, hidden100
 +-------------------+------------------------+---------------------+
 Accuracy: 0.7499
 
-batch_size=256, epochs=15, eta=0.002, glove300, hidden100
+batch_size=256, epochs=15, eta=0.002, glove300, hidden200
 +-------------------+------------------------+---------------------+
 |                   | Predicted no duplicate | Predicted duplicate |
 +-------------------+------------------------+---------------------+
@@ -74,7 +74,7 @@ batch_size=256, epochs=15, eta=0.002, glove300, hidden100
 +-------------------+------------------------+---------------------+
 Accuracy: 0.7626
 
-batch_size=256, epochs=15, eta=0.002, glove300, hidden120
+batch_size=256, epochs=15, eta=0.002, glove300, hidden240
 +-------------------+------------------------+---------------------+
 |                   | Predicted no duplicate | Predicted duplicate |
 +-------------------+------------------------+---------------------+
@@ -83,7 +83,7 @@ batch_size=256, epochs=15, eta=0.002, glove300, hidden120
 +-------------------+------------------------+---------------------+
 Accuracy: 0.7699
 
-batch_size=256, epochs=20, eta=0.002, glove300, hidden150
+batch_size=256, epochs=20, eta=0.002, glove300, hidden300
 +-------------------+------------------------+---------------------+
 |                   | Predicted no duplicate | Predicted duplicate |
 +-------------------+------------------------+---------------------+
@@ -92,7 +92,7 @@ batch_size=256, epochs=20, eta=0.002, glove300, hidden150
 +-------------------+------------------------+---------------------+
 Accuracy: 0.7624
 
-batch_size=256, epochs=20, eta=0.002, glove300, hidden120
+batch_size=256, epochs=20, eta=0.002, glove300, hidden240
 +-------------------+------------------------+---------------------+
 |                   | Predicted no duplicate | Predicted duplicate |
 +-------------------+------------------------+---------------------+
@@ -108,7 +108,7 @@ Accuracy: 0.7895
 +-------------------+------------------------+---------------------+
 Accuracy: 0.7667
 
-batch_size=256, epochs=20, eta=0.002, glove300, hidden120, another padding at the end
+batch_size=256, epochs=20, eta=0.002, glove300, hidden240, another padding at the end
 +-------------------+------------------------+---------------------+
 |                   | Predicted no duplicate | Predicted duplicate |
 +-------------------+------------------------+---------------------+
@@ -117,7 +117,7 @@ batch_size=256, epochs=20, eta=0.002, glove300, hidden120, another padding at th
 +-------------------+------------------------+---------------------+
 Accuracy: 0.7922
 
-batch_size=256, epochs=20, eta=0.002, glove300, hidden120, another padding at the end, with data augmentation
+batch_size=256, epochs=20, eta=0.002, glove300, hidden240, another padding at the end, with data augmentation
 +-------------------+------------------------+---------------------+
 |                   | Predicted no duplicate | Predicted duplicate |
 +-------------------+------------------------+---------------------+
@@ -126,7 +126,7 @@ batch_size=256, epochs=20, eta=0.002, glove300, hidden120, another padding at th
 +-------------------+------------------------+---------------------+
 Accuracy: 0.7943
 
-batch_size=512, epochs=20, eta=0.002, glove300, hidden120
+batch_size=512, epochs=20, eta=0.002, glove300, hidden240
 +-------------------+------------------------+---------------------+
 |                   | Predicted no duplicate | Predicted duplicate |
 +-------------------+------------------------+---------------------+
@@ -135,7 +135,7 @@ batch_size=512, epochs=20, eta=0.002, glove300, hidden120
 +-------------------+------------------------+---------------------+
 Accuracy: 0.7647
 
-batch_size=128, epochs=20, eta=0.002, glove300, hidden120
+batch_size=128, epochs=20, eta=0.002, glove300, hidden240
 +-------------------+------------------------+---------------------+
 |                   | Predicted no duplicate | Predicted duplicate |
 +-------------------+------------------------+---------------------+
@@ -144,7 +144,7 @@ batch_size=128, epochs=20, eta=0.002, glove300, hidden120
 +-------------------+------------------------+---------------------+
 Accuracy: 0.7621
 
-batch_size=256, epochs=30, eta=0.0016, glove300, hidden120
+batch_size=256, epochs=30, eta=0.0016, glove300, hidden240
 +-------------------+------------------------+---------------------+
 |                   | Predicted no duplicate | Predicted duplicate |
 +-------------------+------------------------+---------------------+
@@ -155,7 +155,7 @@ Accuracy: 0.7644
 
 ------------------------------------------------------------------------------
 stacked GRU
-batch_size=256, epochs=20, eta=0.0016, glove300, hidden120, 2levels
+batch_size=256, epochs=20, eta=0.0016, glove300, hidden240, 2levels
 +-------------------+------------------------+---------------------+
 |                   | Predicted no duplicate | Predicted duplicate |
 +-------------------+------------------------+---------------------+
@@ -164,7 +164,7 @@ batch_size=256, epochs=20, eta=0.0016, glove300, hidden120, 2levels
 +-------------------+------------------------+---------------------+
 Accuracy: 0.7914
 
-batch_size=256, epochs=30, eta=0.0016, glove300, hidden120, 3levels
+batch_size=256, epochs=30, eta=0.0016, glove300, hidden240, 3levels
 +-------------------+------------------------+---------------------+
 |                   | Predicted no duplicate | Predicted duplicate |
 +-------------------+------------------------+---------------------+
@@ -173,7 +173,7 @@ batch_size=256, epochs=30, eta=0.0016, glove300, hidden120, 3levels
 +-------------------+------------------------+---------------------+
 Accuracy: 0.802
 
-batch_size=256, epochs=30, eta=0.0016, glove200, hidden120, 3levels
+batch_size=256, epochs=30, eta=0.0016, glove200, hidden240, 3levels
 +-------------------+------------------------+---------------------+
 |                   | Predicted no duplicate | Predicted duplicate |
 +-------------------+------------------------+---------------------+
@@ -182,7 +182,7 @@ batch_size=256, epochs=30, eta=0.0016, glove200, hidden120, 3levels
 +-------------------+------------------------+---------------------+
 Accuracy: 0.7886
 
-batch_size=256, epochs=30, eta=0.0016, glove200, hidden100, 3levels
+batch_size=256, epochs=30, eta=0.0016, glove200, hidden200, 3levels
 +-------------------+------------------------+---------------------+
 |                   | Predicted no duplicate | Predicted duplicate |
 +-------------------+------------------------+---------------------+

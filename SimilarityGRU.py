@@ -285,7 +285,7 @@ if __name__ == '__main__':
 
         if args.save:
             dt = str(datetime.now()).replace(' ', '_').replace(':', '_').replace('.', '_')
-            newdir = 'model_' + dt
+            newdir = 'simGRU_model_' + dt
             os.mkdir(newdir)
             torch.save(encoder.state_dict(), os.path.join(newdir, 'encoder.model'))
             with open(os.path.join(newdir, 'w2i'), 'wb') as f:
