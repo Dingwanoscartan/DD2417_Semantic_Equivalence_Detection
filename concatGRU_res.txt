@@ -1,0 +1,192 @@
+batch_size=256, epochs=5, eta=0.002, glove50
+nltk tokenization, padding after concatenation, no separation mark, no end mark
++-------------------+------------------------+---------------------+
+|                   | Predicted no duplicate | Predicted duplicate |
++-------------------+------------------------+---------------------+
+| Real no duplicate | 25529                  | 812                 |
+| Real duplicate    | 11413                  | 2680                |
++-------------------+------------------------+---------------------+
+Accuracy: 0.6977
+
+
+batch_size=256, epochs=5, eta=0.002, glove50
+nltk tokenization, padding after concatenation, separation mark: padding, no end mark
++-------------------+------------------------+---------------------+
+|                   | Predicted no duplicate | Predicted duplicate |
++-------------------+------------------------+---------------------+
+| Real no duplicate | 25338                  | 1003                |
+| Real duplicate    | 10328                  | 3765                |
++-------------------+------------------------+---------------------+
+Accuracy: 0.7198
+
+batch_size=256, epochs=5, eta=0.002, glove50
+nltk tokenization, max padding over q1 and q2 for all data set, separation mark: padding, no end mark
+
+out of memory
+
+
+batch_size=256, epochs=5, eta=0.002, glove50
+nltk tokenization, max padding over q1 and q2 separately for q1 and q2 over all data set, separation mark: padding, no end mark
+
+out of memory
+
+
+batch_size=256, epochs=5, eta=0.002, glove50
+nltk tokenization, max padding over q1 and q2 separately for q1 and q2 by batch, separation mark: padding, no end mark
++-------------------+------------------------+---------------------+
+|                   | Predicted no duplicate | Predicted duplicate |
++-------------------+------------------------+---------------------+
+| Real no duplicate | 25988                  | 353                 |
+| Real duplicate    | 12110                  | 1983                |
++-------------------+------------------------+---------------------+
+Accuracy: 0.6918
+
+
+batch_size=256, epochs=5, eta=0.002, glove50
+nltk tokenization, max padding over q1 and q2 for q1 and q2 by batch, separation mark: padding, no end mark
++-------------------+------------------------+---------------------+
+|                   | Predicted no duplicate | Predicted duplicate |
++-------------------+------------------------+---------------------+
+| Real no duplicate | 25909                  | 432                 |
+| Real duplicate    | 12387                  | 1706                |
++-------------------+------------------------+---------------------+
+Accuracy: 0.683
+
+
+----------------------------------------------------------
+nltk tokenization, padding after concatenation, separation mark: padding, no end mark
+
+batch_size=256, epochs=10, eta=0.002, glove200, hidden100
++-------------------+------------------------+---------------------+
+|                   | Predicted no duplicate | Predicted duplicate |
++-------------------+------------------------+---------------------+
+| Real no duplicate | 24955                  | 1386                |
+| Real duplicate    | 8727                   | 5366                |
++-------------------+------------------------+---------------------+
+Accuracy: 0.7499
+
+batch_size=256, epochs=15, eta=0.002, glove300, hidden100
++-------------------+------------------------+---------------------+
+|                   | Predicted no duplicate | Predicted duplicate |
++-------------------+------------------------+---------------------+
+| Real no duplicate | 24647                  | 1694                |
+| Real duplicate    | 7906                   | 6187                |
++-------------------+------------------------+---------------------+
+Accuracy: 0.7626
+
+batch_size=256, epochs=15, eta=0.002, glove300, hidden120
++-------------------+------------------------+---------------------+
+|                   | Predicted no duplicate | Predicted duplicate |
++-------------------+------------------------+---------------------+
+| Real no duplicate | 22941                  | 3400                |
+| Real duplicate    | 5903                   | 8190                |
++-------------------+------------------------+---------------------+
+Accuracy: 0.7699
+
+batch_size=256, epochs=20, eta=0.002, glove300, hidden150
++-------------------+------------------------+---------------------+
+|                   | Predicted no duplicate | Predicted duplicate |
++-------------------+------------------------+---------------------+
+| Real no duplicate | 24152                  | 2189                |
+| Real duplicate    | 7417                   | 6676                |
++-------------------+------------------------+---------------------+
+Accuracy: 0.7624
+
+batch_size=256, epochs=20, eta=0.002, glove300, hidden120
++-------------------+------------------------+---------------------+
+|                   | Predicted no duplicate | Predicted duplicate |
++-------------------+------------------------+---------------------+
+| Real no duplicate | 23104                  | 3237                |
+| Real duplicate    | 5275                   | 8818                |
++-------------------+------------------------+---------------------+
+Accuracy: 0.7895
++-------------------+------------------------+---------------------+
+|                   | Predicted no duplicate | Predicted duplicate |
++-------------------+------------------------+---------------------+
+| Real no duplicate | 23902                  | 2439                |
+| Real duplicate    | 6993                   | 7100                |
++-------------------+------------------------+---------------------+
+Accuracy: 0.7667
+
+batch_size=256, epochs=20, eta=0.002, glove300, hidden120, another padding at the end
++-------------------+------------------------+---------------------+
+|                   | Predicted no duplicate | Predicted duplicate |
++-------------------+------------------------+---------------------+
+| Real no duplicate | 23117                  | 3224                |
+| Real duplicate    | 5180                   | 8913                |
++-------------------+------------------------+---------------------+
+Accuracy: 0.7922
+
+batch_size=256, epochs=20, eta=0.002, glove300, hidden120, another padding at the end, with data augmentation
++-------------------+------------------------+---------------------+
+|                   | Predicted no duplicate | Predicted duplicate |
++-------------------+------------------------+---------------------+
+| Real no duplicate | 24569                  | 1772                |
+| Real duplicate    | 6547                   | 7546                |
++-------------------+------------------------+---------------------+
+Accuracy: 0.7943
+
+batch_size=512, epochs=20, eta=0.002, glove300, hidden120
++-------------------+------------------------+---------------------+
+|                   | Predicted no duplicate | Predicted duplicate |
++-------------------+------------------------+---------------------+
+| Real no duplicate | 23691                  | 2650                |
+| Real duplicate    | 6864                   | 7229                |
++-------------------+------------------------+---------------------+
+Accuracy: 0.7647
+
+batch_size=128, epochs=20, eta=0.002, glove300, hidden120
++-------------------+------------------------+---------------------+
+|                   | Predicted no duplicate | Predicted duplicate |
++-------------------+------------------------+---------------------+
+| Real no duplicate | 23697                  | 2644                |
+| Real duplicate    | 6974                   | 7119                |
++-------------------+------------------------+---------------------+
+Accuracy: 0.7621
+
+batch_size=256, epochs=30, eta=0.0016, glove300, hidden120
++-------------------+------------------------+---------------------+
+|                   | Predicted no duplicate | Predicted duplicate |
++-------------------+------------------------+---------------------+
+| Real no duplicate | 24376                  | 1965                |
+| Real duplicate    | 7563                   | 6530                |
++-------------------+------------------------+---------------------+
+Accuracy: 0.7644
+
+------------------------------------------------------------------------------
+stacked GRU
+batch_size=256, epochs=20, eta=0.0016, glove300, hidden120, 2levels
++-------------------+------------------------+---------------------+
+|                   | Predicted no duplicate | Predicted duplicate |
++-------------------+------------------------+---------------------+
+| Real no duplicate | 23716                  | 2625                |
+| Real duplicate    | 5809                   | 8284                |
++-------------------+------------------------+---------------------+
+Accuracy: 0.7914
+
+batch_size=256, epochs=30, eta=0.0016, glove300, hidden120, 3levels
++-------------------+------------------------+---------------------+
+|                   | Predicted no duplicate | Predicted duplicate |
++-------------------+------------------------+---------------------+
+| Real no duplicate | 23756                  | 2585                |
+| Real duplicate    | 5421                   | 8672                |
++-------------------+------------------------+---------------------+
+Accuracy: 0.802
+
+batch_size=256, epochs=30, eta=0.0016, glove200, hidden120, 3levels
++-------------------+------------------------+---------------------+
+|                   | Predicted no duplicate | Predicted duplicate |
++-------------------+------------------------+---------------------+
+| Real no duplicate | 23770                  | 2571                |
+| Real duplicate    | 5978                   | 8115                |
++-------------------+------------------------+---------------------+
+Accuracy: 0.7886
+
+batch_size=256, epochs=30, eta=0.0016, glove200, hidden100, 3levels
++-------------------+------------------------+---------------------+
+|                   | Predicted no duplicate | Predicted duplicate |
++-------------------+------------------------+---------------------+
+| Real no duplicate | 23690                  | 2651                |
+| Real duplicate    | 5281                   | 8812                |
++-------------------+------------------------+---------------------+
+Accuracy: 0.8038
