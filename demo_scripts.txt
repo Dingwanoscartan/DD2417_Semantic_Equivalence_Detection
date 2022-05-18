@@ -1,10 +1,21 @@
 python concatGRU.py -l concatGRU_model_2022-05-17_00_26_11_624487
 Can I make money online?
 What are the best ways to make money online?
+-1.3681806325912476, 1.4223504066467285
+0.9955
 
 python SimilarityGRU.py -tr training.csv -te test.csv -hs 150 -bs 50 -e 15 -thf 30 -lr 0.001 -ef glove.6B.200d.txt -s -st 1
 
 python SimilarityGRU.py -te test.csv -l simGRU_model_2022-05-17_01_39_56_621281
 
--1.3681806325912476, 1.4223504066467285
-0.9955
+
+How do we time travel?
+Is time travel theoretically possible?
+1.095574975013733, -1.05915367603302
+0.1589
+
+
+What is Holi for?
+What's the holiness of God?
+3.2019052505493164, -3.1343204975128174
+0
