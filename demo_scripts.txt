@@ -2,7 +2,7 @@ python concatGRU.py -l concatGRU_model_2022-05-17_00_26_11_624487
 Can I make money online?
 What are the best ways to make money online?
 
-python SimilarityGRU.py -tr dataset/training.csv -te dataset/test.csv -hs 150 -bs 50 -e 15 -thf 30 -lr 0.001 -ef glove/glove.6B.200d.txt -s -st 1
+python SimilarityGRU.py -tr training.csv -te test.csv -hs 150 -bs 50 -e 15 -thf 30 -lr 0.001 -ef glove.6B.200d.txt -s -st 1
 
 python SimilarityGRU.py -te test.csv -l simGRU_model_2022-05-17_01_39_56_621281
 
