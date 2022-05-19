@@ -66,7 +66,7 @@ def load_glove_embeddings(embedding_file, padding_idx=0, padding_word=PADDING_WO
 
 class SEDDataset(Dataset):
     """
-    A class loading NER dataset from a CSV file to be used as an input to PyTorch DataLoader.
+    A class loading dataset from a CSV file to be used as an input to PyTorch DataLoader.
     """
 
     def __init__(self, filename):
